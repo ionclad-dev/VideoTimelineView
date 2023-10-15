@@ -5,6 +5,14 @@ plugins {
     id("com.android.library") version "8.1.2" apply false
 }
 
+buildscript{
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.0.2")
+    }
+    repositories {
+        google()
+    }
+}
 tasks.register("clean",Delete::class){
     delete(rootProject.buildDir)
 }
