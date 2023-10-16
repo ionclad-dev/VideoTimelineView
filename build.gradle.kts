@@ -5,14 +5,3 @@ plugins {
     id("com.android.library") version "8.1.2" apply false
 }
 
-buildscript{
-    dependencies {
-        classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
-    }
-    repositories {
-        google()
-    }
-}
-tasks.register("clean",Delete::class){
-    delete(rootProject.buildDir)
-}
